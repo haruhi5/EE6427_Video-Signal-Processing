@@ -1,5 +1,6 @@
 %% Name Arithmetic Coding
-name = "Wu Tanghong"; % 11
+function []=ArithmeticCoding(name)
+%name = "Wu Tanghong"; % 11
 name_char = lower( char(name) )';
 
 tbl = tabulate(name_char);
@@ -40,3 +41,4 @@ for i=1:length(name_char)
     fprintf("\n%c: %.15g %.15g\n",name_char(i),Low,High);
 end
 
+end
